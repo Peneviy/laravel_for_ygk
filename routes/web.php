@@ -22,3 +22,5 @@ Route::post('/login', 'LoginController@__construct');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/upload', [App\Http\Controllers\UploadController::class, 'upload']);

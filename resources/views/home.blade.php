@@ -18,6 +18,11 @@
                 </div>
             </div>
         </div>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            @csrf
+            <input type="file" name="file">
+            <button type="submit">Загрузить</button>
+        </form>
     </div>
 </div>
 @endsection
